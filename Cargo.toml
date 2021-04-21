@@ -1,0 +1,49 @@
+[package]
+name = "lapin-demo"
+version = "0.1.0"
+authors = ["Wenew Zhang <wenewboy@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.lapin]
+version = "1.6.6"
+default-features = false
+
+[dependencies.tokio]
+version = "1.5.0"
+features = ["full"]
+
+[dependencies]
+async-trait = "^0.1"
+futures-io = "^0.3"
+parking_lot = "^0.11"
+tokio-amqp = "1.0.0"
+async-io = "^1.0"
+blocking = "^1.0"
+futures-lite = "^1.7"
+pinky-swear = "^5.1"
+waker-fn = "^1.1"
+# tokio = "0.3.7"
+
+[dev-dependencies.tracing-subscriber]
+version = "^0.2"
+features = ["fmt"]
+
+[dependencies.flume]
+version = "^0.10"
+default-features = false
+features = ["async"]
+
+[dependencies.serde]
+version  = "^1.0"
+features = ["derive"]
+
+[dependencies.tracing]
+version = "^0.1"
+default-features = true
+
+
+[dev-dependencies]
+serde_json = "^1.0"
+waker-fn = "^1.1"
