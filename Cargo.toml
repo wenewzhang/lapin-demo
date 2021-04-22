@@ -15,6 +15,8 @@ version = "1.5.0"
 features = ["full"]
 
 [dependencies]
+log = "0.4.14"
+env_logger = "0.8.3"
 async-trait = "^0.1"
 futures-io = "^0.3"
 parking_lot = "^0.11"
